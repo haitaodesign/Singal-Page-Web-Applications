@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SPA</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #777;
+        }
+        #spa{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            bottom: 8px;
+            right: 8px;
+            border-radius: 8px 8px 0 8px;
+            background-color: #fff;
+        }
+        .spa-slider{
+            position: absolute;
+            bottom: 0;
+            right: 2px;
+            width: 300px;
+            height: 16px;
+            cursor: pointer;
+            border-radius: 8px 0 0 0;
+            background-color: #f00;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        var spa = (function($){
+            var configMap={
+                extended_height:434,
+                extended_title:'Click to retract',
+                retracted_height:16,
+                retracted_title:'Click to extend',
+                template_html:'<div class="spa-slider"></div>'
+            },
+                $chatSlider,
+                toggleSlider,onClickSlider,initModule;
+
+                toggleSlider = function(){
+                    var slider_height = $chatSlider.height();
+                    if(slider_height === configMap.retracted_height){
+                        
+                    }
+                }
+
+                onClickSlider = function(event){}
+
+                initModule = function($chatSlider){
+
+                }
+        }());
+    </script>
+</head>
+<body>
+    <div id="spa">
+        <div class="spa-slider"></div>
+    </div>
+</body>
+</html>
