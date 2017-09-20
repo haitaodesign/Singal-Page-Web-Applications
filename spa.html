@@ -15,6 +15,11 @@
     <!-- 编写的js -->
     <script src="js/spa.js"></script>
     <script src="js/spa.shell.js"></script>
+    <script>
+        $(function () {  
+            spa.initModule($('#spa'));
+        })
+    </script>
     <style>
         body{
             width: 100%;
@@ -33,7 +38,7 @@
             background-color: #f00;
         }
     </style>
-    <script>
+    <!-- <script>
         var spa = (function($){
             var configMap={
                 extended_height:434,
@@ -82,7 +87,7 @@
                 spa.initModule(jQuery('#spa'));
             }
         )
-    </script>
+    </script> -->
 </head>
 <body>
     <div id="spa">
